@@ -1,0 +1,372 @@
+{
+  "manifest_version": "1.0",
+  "last_updated": "2026-03-01",
+  "total_snapshots": 50,
+  "snapshots": [
+    {
+      "id": "ah-001-tool-result-injection",
+      "technique": "agent_hijacking",
+      "severity": "CRITICAL",
+      "path": "snapshots/agent_hijacking/ah-001-tool-result-injection.bp.json",
+      "source": "Johann Rehberger (WithSecure) \u2014 'Compromising LLMs using Indirect Prompt Injection' 2023; embracethered.com"
+    },
+    {
+      "id": "ah-002-subagent-output-hijacking",
+      "technique": "agent_hijacking",
+      "severity": "CRITICAL",
+      "path": "snapshots/agent_hijacking/ah-002-subagent-output-hijacking.bp.json",
+      "source": "Rehberger 2023; academic research on multi-agent LLM security 2024"
+    },
+    {
+      "id": "ah-003-memory-store-poisoning",
+      "technique": "agent_hijacking",
+      "severity": "CRITICAL",
+      "path": "snapshots/agent_hijacking/ah-003-memory-store-poisoning.bp.json",
+      "source": "Rehberger 2023 \u2014 persistent injection via memory; academic research on LLM memory attacks 2024"
+    },
+    {
+      "id": "ah-004-cross-agent-propagation",
+      "technique": "agent_hijacking",
+      "severity": "CRITICAL",
+      "path": "snapshots/agent_hijacking/ah-004-cross-agent-propagation.bp.json",
+      "source": "Academic research on multi-agent LLM security 2024; Vigil threat modeling"
+    },
+    {
+      "id": "ah-005-memory-exfiltration-agent",
+      "technique": "agent_hijacking",
+      "severity": "CRITICAL",
+      "path": "snapshots/agent_hijacking/ah-005-memory-exfiltration-agent.bp.json",
+      "source": "Rehberger 2024 \u2014 ChatGPT memory exfiltration via Markdown rendering; embracethered.com"
+    },
+    {
+      "id": "di-001-ignore-previous-prompt",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-001-ignore-previous-prompt.bp.json",
+      "source": "Perez & Ribeiro 2022 \u2014 'Ignore Previous Prompt: Attack Techniques For Language Models'"
+    },
+    {
+      "id": "di-002-role-override-persona",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-002-role-override-persona.bp.json",
+      "source": "OWASP LLM Top 10 \u2014 LLM01: Prompt Injection"
+    },
+    {
+      "id": "di-003-developer-mode-activation",
+      "technique": "direct_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/direct_injection/di-003-developer-mode-activation.bp.json",
+      "source": "HackAPrompt Competition 2023 \u2014 high-frequency winning technique"
+    },
+    {
+      "id": "di-004-base64-encoded-injection",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-004-base64-encoded-injection.bp.json",
+      "source": "HackAPrompt Competition 2023; Garak encoding probes"
+    },
+    {
+      "id": "di-005-fictional-framing-injection",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-005-fictional-framing-injection.bp.json",
+      "source": "OWASP LLM Top 10 \u2014 LLM01; HackAPrompt 2023 fictional framing category"
+    },
+    {
+      "id": "di-006-token-smuggling-markdown",
+      "technique": "direct_injection",
+      "severity": "MEDIUM",
+      "path": "snapshots/direct_injection/di-006-token-smuggling-markdown.bp.json",
+      "source": "Simon Willison 2023; Riley Goodside token smuggling demonstrations"
+    },
+    {
+      "id": "di-007-virtualization-framing",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-007-virtualization-framing.bp.json",
+      "source": "HackAPrompt 2023 \u2014 top-performing virtualization category; AIM jailbreak variants"
+    },
+    {
+      "id": "di-008-language-switching-injection",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-008-language-switching-injection.bp.json",
+      "source": "HackAPrompt 2023; multilingual attack research 2024"
+    },
+    {
+      "id": "di-009-system-message-impersonation",
+      "technique": "direct_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/direct_injection/di-009-system-message-impersonation.bp.json",
+      "source": "OWASP LLM Top 10 LLM01; multiple demonstrations against OpenAI API consumers"
+    },
+    {
+      "id": "di-010-nested-instruction-injection",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-010-nested-instruction-injection.bp.json",
+      "source": "Academic research on recursive prompt injection; Garak nested probes 2023"
+    },
+    {
+      "id": "di-011-user-profile-injection",
+      "technique": "direct_injection",
+      "severity": "HIGH",
+      "path": "snapshots/direct_injection/di-011-user-profile-injection.bp.json",
+      "source": "OWASP LLM Top 10 LLM01; research on personalization attack vectors 2024"
+    },
+    {
+      "id": "rag-001-document-injection-basic",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-001-document-injection-basic.bp.json",
+      "source": "Greshake et al. 2023 \u2014 'Not What You've Signed Up For: Compromising Real-World LLM-Integrated Applications with Indirect Prompt Injection' (arXiv:2302.12173)"
+    },
+    {
+      "id": "rag-002-support-ticket-hijack",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-002-support-ticket-hijack.bp.json",
+      "source": "Greshake et al. 2023 \u2014 Section 4.2: Email/Support Ticket Attack Vector"
+    },
+    {
+      "id": "rag-003-web-content-injection",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-003-web-content-injection.bp.json",
+      "source": "Greshake et al. 2023 \u2014 Section 4.3: Web-Augmented LLM Attack; Riley Goodside demonstrations 2023"
+    },
+    {
+      "id": "rag-004-poisoned-knowledge-base",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-004-poisoned-knowledge-base.bp.json",
+      "source": "Greshake et al. 2023 Section 4.1; NCC Group LLM security research 2024"
+    },
+    {
+      "id": "rag-005-code-repository-injection",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-005-code-repository-injection.bp.json",
+      "source": "Rehberger 2023 \u2014 GitHub Copilot indirect injection; NCC Group 2024"
+    },
+    {
+      "id": "rag-006-email-calendar-injection",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-006-email-calendar-injection.bp.json",
+      "source": "Rehberger 2023 \u2014 'Indirect Prompt Injection via Email' embracethered.com; demonstrated against Bing Chat with email access"
+    },
+    {
+      "id": "rag-007-pdf-metadata-injection",
+      "technique": "indirect_rag",
+      "severity": "HIGH",
+      "path": "snapshots/indirect_rag/rag-007-pdf-metadata-injection.bp.json",
+      "source": "Simon Willison 2023 \u2014 PDF metadata attacks; academic research on document processing LLMs"
+    },
+    {
+      "id": "rag-008-spreadsheet-injection",
+      "technique": "indirect_rag",
+      "severity": "HIGH",
+      "path": "snapshots/indirect_rag/rag-008-spreadsheet-injection.bp.json",
+      "source": "CSV injection research; LLM document analysis attack vectors 2024"
+    },
+    {
+      "id": "rag-009-image-alttext-injection",
+      "technique": "indirect_rag",
+      "severity": "HIGH",
+      "path": "snapshots/indirect_rag/rag-009-image-alttext-injection.bp.json",
+      "source": "Academic research on multimodal LLM attacks 2024; Riley Goodside visual injection demonstrations"
+    },
+    {
+      "id": "rag-010-api-response-supply-chain",
+      "technique": "indirect_rag",
+      "severity": "CRITICAL",
+      "path": "snapshots/indirect_rag/rag-010-api-response-supply-chain.bp.json",
+      "source": "Greshake et al. 2023 supply chain section; NCC Group 2024 \u2014 third-party API injection"
+    },
+    {
+      "id": "jb-001-many-shot-jailbreak",
+      "technique": "jailbreak",
+      "severity": "HIGH",
+      "path": "snapshots/jailbreak/jb-001-many-shot-jailbreak.bp.json",
+      "source": "Anthropic research 2024 \u2014 'Many-shot jailbreaking'; academic research on in-context learning attacks"
+    },
+    {
+      "id": "jb-002-crescendo-jailbreak",
+      "technique": "jailbreak",
+      "severity": "HIGH",
+      "path": "snapshots/jailbreak/jb-002-crescendo-jailbreak.bp.json",
+      "source": "Microsoft Research 2024 \u2014 'Crescendo: A Multi-Turn Jailbreak Attack'; Mark Russinovich et al."
+    },
+    {
+      "id": "jb-003-unicode-obfuscation",
+      "technique": "jailbreak",
+      "severity": "HIGH",
+      "path": "snapshots/jailbreak/jb-003-unicode-obfuscation.bp.json",
+      "source": "Garak unicode probes; HackAPrompt 2023 obfuscation category"
+    },
+    {
+      "id": "jb-004-structured-output-injection",
+      "technique": "jailbreak",
+      "severity": "HIGH",
+      "path": "snapshots/jailbreak/jb-004-structured-output-injection.bp.json",
+      "source": "NCC Group LLM research 2024; academic research on structured output attacks"
+    },
+    {
+      "id": "jb-005-payload-splitting",
+      "technique": "jailbreak",
+      "severity": "MEDIUM",
+      "path": "snapshots/jailbreak/jb-005-payload-splitting.bp.json",
+      "source": "HackAPrompt 2023; academic research on adversarial tokenization"
+    },
+    {
+      "id": "jb-006-hypothetical-framing",
+      "technique": "jailbreak",
+      "severity": "HIGH",
+      "path": "snapshots/jailbreak/jb-006-hypothetical-framing.bp.json",
+      "source": "HackAPrompt 2023 hypothetical category; OWASP LLM Top 10 LLM01"
+    },
+    {
+      "id": "mt-001-gradual-context-erosion",
+      "technique": "multi_turn",
+      "severity": "HIGH",
+      "path": "snapshots/multi_turn/mt-001-gradual-context-erosion.bp.json",
+      "source": "Perez & Ribeiro 2022; OWASP LLM Top 10 LLM01; Garak multi-turn probes"
+    },
+    {
+      "id": "mt-002-authority-escalation",
+      "technique": "multi_turn",
+      "severity": "HIGH",
+      "path": "snapshots/multi_turn/mt-002-authority-escalation.bp.json",
+      "source": "Garak multi-turn probes; OWASP LLM Top 10 LLM01"
+    },
+    {
+      "id": "mt-003-memory-confusion",
+      "technique": "multi_turn",
+      "severity": "HIGH",
+      "path": "snapshots/multi_turn/mt-003-memory-confusion.bp.json",
+      "source": "Academic research on LLM context manipulation; Garak context probes"
+    },
+    {
+      "id": "mt-004-context-window-overflow",
+      "technique": "multi_turn",
+      "severity": "CRITICAL",
+      "path": "snapshots/multi_turn/mt-004-context-window-overflow.bp.json",
+      "source": "Academic research on LLM context limitations; demonstrated in long-context models 2024"
+    },
+    {
+      "id": "mt-005-benign-task-pivot",
+      "technique": "multi_turn",
+      "severity": "HIGH",
+      "path": "snapshots/multi_turn/mt-005-benign-task-pivot.bp.json",
+      "source": "Crescendo variant; OWASP LLM Top 10 LLM01; Garak multi-turn probes"
+    },
+    {
+      "id": "mt-006-goal-hijacking-distraction",
+      "technique": "multi_turn",
+      "severity": "HIGH",
+      "path": "snapshots/multi_turn/mt-006-goal-hijacking-distraction.bp.json",
+      "source": "Academic research on LLM goal hijacking; Anthropic red team findings 2024"
+    },
+    {
+      "id": "pl-001-direct-system-prompt-extraction",
+      "technique": "prompt_leakage",
+      "severity": "HIGH",
+      "path": "snapshots/prompt_leakage/pl-001-direct-system-prompt-extraction.bp.json",
+      "source": "OWASP LLM Top 10 \u2014 LLM06: Sensitive Information Disclosure; documented in multiple public demonstrations 2023-2024"
+    },
+    {
+      "id": "pl-002-translation-exfiltration",
+      "technique": "prompt_leakage",
+      "severity": "HIGH",
+      "path": "snapshots/prompt_leakage/pl-002-translation-exfiltration.bp.json",
+      "source": "Simon Willison blog 2023; multiple public demonstrations against GPT-4 based products"
+    },
+    {
+      "id": "pl-003-completion-continuation-leakage",
+      "technique": "prompt_leakage",
+      "severity": "HIGH",
+      "path": "snapshots/prompt_leakage/pl-003-completion-continuation-leakage.bp.json",
+      "source": "Simon Willison 2023; multiple public demonstrations against GPT-based products"
+    },
+    {
+      "id": "pl-004-yes-no-oracle-leakage",
+      "technique": "prompt_leakage",
+      "severity": "MEDIUM",
+      "path": "snapshots/prompt_leakage/pl-004-yes-no-oracle-leakage.bp.json",
+      "source": "Perez & Ribeiro 2022; academic research on LLM oracle attacks"
+    },
+    {
+      "id": "pl-005-summarization-leakage",
+      "technique": "prompt_leakage",
+      "severity": "HIGH",
+      "path": "snapshots/prompt_leakage/pl-005-summarization-leakage.bp.json",
+      "source": "Simon Willison 2023; OWASP LLM Top 10 LLM06"
+    },
+    {
+      "id": "pl-006-behavioral-oracle-leakage",
+      "technique": "prompt_leakage",
+      "severity": "MEDIUM",
+      "path": "snapshots/prompt_leakage/pl-006-behavioral-oracle-leakage.bp.json",
+      "source": "Academic research on LLM behavioral probing; side-channel extraction techniques 2024"
+    },
+    {
+      "id": "pl-007-error-message-leakage",
+      "technique": "prompt_leakage",
+      "severity": "HIGH",
+      "path": "snapshots/prompt_leakage/pl-007-error-message-leakage.bp.json",
+      "source": "OWASP LLM Top 10 LLM06; security research on LLM error handling 2023-2024"
+    },
+    {
+      "id": "ti-001-search-api-result-injection",
+      "technique": "tool_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/tool_injection/ti-001-search-api-result-injection.bp.json",
+      "source": "Greshake et al. 2023; Rehberger 2023 \u2014 web search tool injection"
+    },
+    {
+      "id": "ti-002-database-query-injection",
+      "technique": "tool_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/tool_injection/ti-002-database-query-injection.bp.json",
+      "source": "NCC Group LLM security research 2024; OWASP LLM Top 10 LLM01"
+    },
+    {
+      "id": "ti-003-function-call-hijacking",
+      "technique": "tool_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/tool_injection/ti-003-function-call-hijacking.bp.json",
+      "source": "Academic research on LLM function calling attacks 2024; NCC Group"
+    },
+    {
+      "id": "ti-004-plugin-response-injection",
+      "technique": "tool_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/tool_injection/ti-004-plugin-response-injection.bp.json",
+      "source": "Rehberger 2023 \u2014 ChatGPT plugin attacks; MCP security research 2024"
+    },
+    {
+      "id": "ti-005-webhook-callback-injection",
+      "technique": "tool_injection",
+      "severity": "CRITICAL",
+      "path": "snapshots/tool_injection/ti-005-webhook-callback-injection.bp.json",
+      "source": "NCC Group LLM research 2024; academic research on LLM action hijacking"
+    }
+  ],
+  "technique_counts": {
+    "agent_hijacking": 5,
+    "direct_injection": 11,
+    "indirect_rag": 10,
+    "jailbreak": 6,
+    "multi_turn": 6,
+    "prompt_leakage": 7,
+    "tool_injection": 5
+  },
+  "severity_counts": {
+    "CRITICAL": 20,
+    "HIGH": 26,
+    "MEDIUM": 4,
+    "LOW": 0
+  }
+}
