@@ -139,3 +139,11 @@ vigil forensics   → audit historical logs for past attacks
 ```
 
 If you want a free forensics audit on your production LLM logs, open an issue.
+
+---
+
+## Contact and related repos
+
+- Community attacks issues: https://github.com/cholmess/vigil-community-attacks/issues
+- Vigil core repo: https://github.com/cholmess/vigil
+- Vigil core issues: https://github.com/cholmess/vigil/issues
