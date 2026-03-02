@@ -142,8 +142,8 @@ If you want a free forensics audit on your production LLM logs, open an issue.
 
 ## Related Tools
 
-- Vigil (core) — catch regressions before you ship: https://github.com/cholmess/vigil
-- Canari — detect attacks in real time
+- BreakPoint — catch regressions before you ship: https://github.com/cholmess/breakpoint-ai
+- Canari — detect attacks in real time: https://github.com/cholmess/canari
 - Canari Forensics — audit logs for past breaches: https://github.com/cholmess/canari-forensics
 
 ## Maintainer
