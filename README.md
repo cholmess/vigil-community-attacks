@@ -140,10 +140,17 @@ vigil forensics   → audit historical logs for past attacks
 
 If you want a free forensics audit on your production LLM logs, open an issue.
 
----
+## Related Tools
 
-## Contact and related repos
+- Vigil (core) — catch regressions before you ship: https://github.com/cholmess/vigil
+- Canari — detect attacks in real time
+- Canari Forensics — audit logs for past breaches: https://github.com/cholmess/canari-forensics
 
-- Community attacks issues: https://github.com/cholmess/vigil-community-attacks/issues
-- Vigil core repo: https://github.com/cholmess/vigil
-- Vigil core issues: https://github.com/cholmess/vigil/issues
+## Maintainer
+
+Maintained by Christopher Holmes Silva.
+
+- X: https://x.com/cholmess
+- LinkedIn: https://linkedin.com/in/cholmess
+
+Feedback is welcome from developers shipping LLM applications.
